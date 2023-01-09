@@ -1,0 +1,30 @@
+{
+    "id": "cmpl-6WendmCVAliTTdQZCvh9MQBsrkin2",
+    "object": "text_completion",
+    "created": 1673241349,
+    "model": "text-davinci-003",
+    "choices": [
+        {
+            "text": "\n\nNo, Pluto is no longer considered a planet. It is now classified as a dwarf planet.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 5,
+        "completion_tokens": 21,
+        "total_tokens": 26
+    },
+    "parameters": [
+        {
+            "prompt": "Is Pluto a planet?",
+            "max_tokens": 2048,
+            "temperature": 0.5,
+            "top_p": 1,
+            "frequency_penalty": 0,
+            "presence_penalty": 0,
+            "n": 1
+        }
+    ]
+}

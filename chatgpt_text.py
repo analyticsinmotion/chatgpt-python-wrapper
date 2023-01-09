@@ -77,7 +77,7 @@ def chatgpt_text(prompt, model="text-davinci-003", max_tokens=2048, temperature=
 
     # Output to JSON file using the ID as the filename
     if output_to_file is True:
-        with open(response_raw['id']+".json", "w") as outfile:
+        with open("output_chatgpt_text/"+response_raw['id']+".json", "w") as outfile:
             json.dump(response_dict, outfile, indent=4)
 
     # Return the amended chatGPT completion in JSON format
