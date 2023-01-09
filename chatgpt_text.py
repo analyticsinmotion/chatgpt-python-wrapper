@@ -3,7 +3,7 @@
 # Creation Date: 4/01/2023
 # Tested on: Python 3.11
 # PEP8 Exceptions: None
-# Docstring format: Sphinx https://betterprogramming.pub/3-different-docstring-formats-for-python-d27be81e0d68
+# Docstring format: Sphinx
 # Description:  This is a test script that provides access to OpenAI's chatGPT model. It creates a function chatgpt_text
 #               that allows a users to enter a question and also adjust the model settings. The answer will be output
 #               on the screen. A response can also output as a JSON file that contains additional metadata.
@@ -82,17 +82,3 @@ def chatgpt_text(prompt, model="text-davinci-003", max_tokens=2048, temperature=
 
     # Return the amended chatGPT completion in JSON format
     return response
-
-
-# Prompt the Question and return the Answer
-question = input("Enter your question: ")
-result = chatgpt_text(question, output_to_file=True)
-result_dict = json.loads(str(result))
-print("Answer: " + result_dict['choices'][0]['text'].strip('\n'))
-
-
-# Test Scripts
-# test_1 = chatgpt_text('If knowledge is power, are you the most powerful thing on the planet?', output_to_file=True)
-# print(test_1) # Returns the full JSON response
-# result_dict = json.loads(test_1)
-# print("Answer: " + result_dict['choices'][0]['text'].strip('\n'))
