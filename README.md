@@ -1,0 +1,27 @@
+# ChatGPT - Python wrapper
+Python wrapper to access OpenAI's ChatGPT functionality.
+<br /><br />
+
+<!-- DESCRIPTION -->
+## Description
+This project contains a number of test scripts that provide access to OpenAI's ChatGPT models (text, image).
+<br />
+For the ChatGPT text function a user will be prompted to enter their question. The resulting answer will be output on the screen. In addition, the output_to_file flag 
+can be changed to output the question, response and associated metadata in a JSON file.
+<br /><br />
+
+<!-- GETTING STARTED -->
+## Getting Started
+### Dependencies
+- Requires an OpenAI API Key
+- os Module
+- openai Module (https://github.com/openai/openai-python)
+- json Module
+- dotenv Module (https://pypi.org/project/python-dotenv/)
+
+### Installing
+- Create an account and get API Key at https://chat.openai.com
+- Add the API Key to the openai-credentials.env file
+
+### Executing Program
+- Run the main.py file
