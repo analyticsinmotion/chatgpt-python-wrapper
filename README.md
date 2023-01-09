@@ -6,8 +6,7 @@ Python wrapper to access OpenAI's ChatGPT functionality.
 ## Description
 This project contains a number of test scripts that provide access to OpenAI's ChatGPT models (text, image).
 <br />
-For the ChatGPT text function a user will be prompted to enter their question. The resulting answer will be output on the screen. In addition, the output_to_file flag 
-can be changed to output the question, response and associated metadata in a JSON file.
+For the ChatGPT text function a user will be requested to enter their text prompt, question or scenario. The resulting answer will be output on the screen. In addition, the output_to_file flag can be changed to output the text prompt, question, scenario, ChatGPT response and associated metadata in a JSON file.
 <br /><br />
 
 <!-- GETTING STARTED -->
