@@ -20,10 +20,12 @@ import requests  # request images from the web
 import shutil  # save images locally
 import hashlib  # create simple file ids
 
+# Load the API key for OpenAI
 load_dotenv('openai-credentials.env')
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
+# Create a function to input the image description and set the model parameters
 def chatgpt_images(prompt, n=1, size="1024x1024", output_to_file=False):
     """
     This function passes the text prompt, question or scenario to chatgpt and sets the model parameters
