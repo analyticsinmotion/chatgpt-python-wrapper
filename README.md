@@ -1,5 +1,9 @@
-# ChatGPT - Python wrapper
+# ChatGPT – Python Wrapper
 Python wrapper to access OpenAI's ChatGPT functionality.
+<br /><br />
+[![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg?style=for-the-badge&logo=python&logoColor=yellow)](https://www.python.org/downloads/release/python-3111/)&nbsp;&nbsp;
+![Maintenance](https://img.shields.io/badge/Maintained-YES-green.svg?style=for-the-badge)&nbsp;&nbsp;
+[![MIT license](https://img.shields.io/badge/License-MIT-orange.svg?style=for-the-badge)](https://mit-license.org/)&nbsp;&nbsp;
 <br /><br />
 
 <!-- DESCRIPTION -->
