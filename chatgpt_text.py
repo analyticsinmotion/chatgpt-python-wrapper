@@ -1,12 +1,13 @@
 #######################################################################################################################
-# Filename: chatgpt.py
+# Filename: chatgpt_text.py
 # Creation Date: 4/01/2023
 # Tested on: Python 3.11
 # PEP8 Exceptions: None
 # Docstring format: Sphinx
 # Description:  This is a test script that provides access to OpenAI's chatGPT model. It creates a function chatgpt_text
-#               that allows a users to enter a question and also adjust the model settings. The answer will be output
-#               on the screen. A response can also output as a JSON file that contains additional metadata.
+#               that allows a users to enter a text prompt, question or scenario and also adjust the model settings.
+#               The answer will be output on the screen. A response can also output as a JSON file that contains
+#               additional metadata.
 #######################################################################################################################
 
 # Import os, dotenv, openai, json
@@ -25,7 +26,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 def chatgpt_text(prompt, model="text-davinci-003", max_tokens=2048, temperature=0.5, top_p=1, frequency_penalty=0,
                  presence_penalty=0, n=1, output_to_file=False):
     """
-    This function passes the question/text to chatgpt and sets the model parameters
+    This function passes the text prompt, question or scenario to chatgpt and sets the model parameters
 
     :param prompt: the text to send to the model
     :param model: select one of the chatgpt models https://beta.openai.com/docs/models
@@ -42,7 +43,7 @@ def chatgpt_text(prompt, model="text-davinci-003", max_tokens=2048, temperature=
         appear in the text so far, increasing the model's likelihood to talk about new topics.
         https://beta.openai.com/docs/api-reference/parameter-details
     :param n: How many completions to generate for each prompt
-    :param output_to_file: output a JSON with the results
+    :param output_to_file: output a JSON file with the results
 
     :rtype: object
     """
@@ -80,5 +81,5 @@ def chatgpt_text(prompt, model="text-davinci-003", max_tokens=2048, temperature=
         with open("output_chatgpt_text/"+response_raw['id']+".json", "w") as outfile:
             json.dump(response_dict, outfile, indent=4)
 
-    # Return the amended chatGPT completion in JSON format
+    # Return the amended ChatGPT completion in JSON format
     return response
