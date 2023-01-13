@@ -21,7 +21,7 @@ For the ChatGPT text function a user will be requested to enter their text promp
     - re (to enable the use of regular expressions)
     - requests (to request images from the web)
     - shutil (to save images locally)
-    - hashlib
+    - hashlib (create simple file IDs for images)
 
 ### Installing
 - Create an account and get API Key at https://chat.openai.com
