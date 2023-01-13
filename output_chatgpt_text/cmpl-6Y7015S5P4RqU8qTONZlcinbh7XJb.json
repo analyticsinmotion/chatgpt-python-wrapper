@@ -1,0 +1,30 @@
+{
+    "id": "cmpl-6Y7015S5P4RqU8qTONZlcinbh7XJb",
+    "object": "text_completion",
+    "created": 1673588077,
+    "model": "text-davinci-003",
+    "choices": [
+        {
+            "text": "\n\nThe most common interview question for data scientists is \"How do you approach a data science problem?\" This question is designed to assess the candidate's ability to think critically and analyze data in order to develop an effective solution.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 11,
+        "completion_tokens": 45,
+        "total_tokens": 56
+    },
+    "parameters": [
+        {
+            "prompt": "what is the top interview question data scientists get asked?",
+            "max_tokens": 2048,
+            "temperature": 0.5,
+            "top_p": 1,
+            "frequency_penalty": 0,
+            "presence_penalty": 0,
+            "n": 1
+        }
+    ]
+}

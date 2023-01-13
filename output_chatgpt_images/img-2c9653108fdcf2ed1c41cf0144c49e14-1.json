@@ -1,0 +1,19 @@
+{
+    "created": 1673589169,
+    "data": [
+        {
+            "url": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-XXXXXXXXXXXXXXXXXXXXXXXX/user-XXXXXXXXXXXXXXXXXXXXXXXX/img-c4M8CHcn4dCv9hdIhMX5d56M.png?st=2023-01-13T04%3A52%3A49Z&se=2023-01-13T06%3A52%3A49Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-01-13T00%3A42%3A15Z&ske=2023-01-14T00%3A42%3A15Z&sks=b&skv=2021-08-06&sig=Zy8Z9qWR4U/PEChGbgp%2BoUgjpDKyS6xOxRDIYK7KnzI%3D"
+        }
+    ],
+    "_response_ms": 5738,
+    "parameters": [
+        {
+            "prompt": "human face photo",
+            "size": "1024x1024",
+            "n": 1
+        }
+    ],
+    "ids": [
+        "img-c4M8CHcn4dCv9hdIhMX5d56M"
+    ]
+}
