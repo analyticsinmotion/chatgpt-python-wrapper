@@ -18,6 +18,10 @@ For the ChatGPT text function a user will be requested to enter their text promp
     - json
     - openai (https://github.com/openai/openai-python)
     - dotenv (https://pypi.org/project/python-dotenv/)
+    - re
+    - requests
+    - shutil
+    - hashlib
 
 ### Installing
 - Create an account and get API Key at https://chat.openai.com
