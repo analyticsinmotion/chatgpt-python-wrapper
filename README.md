@@ -19,7 +19,7 @@ For the ChatGPT text function a user will be requested to enter their text promp
     - openai (https://github.com/openai/openai-python)
     - dotenv (https://pypi.org/project/python-dotenv/)
     - re (to enable the use of regular expressions)
-    - requests
+    - requests (to request images from the web)
     - shutil
     - hashlib
 
