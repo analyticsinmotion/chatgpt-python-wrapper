@@ -31,3 +31,37 @@ For the ChatGPT image function a user will be requested to enter a description o
 
 ### Executing Program
 - Run the main.py file
+<br /><br />
+
+<!-- INSTRUCTIONS -->
+## Instructions
+
+### Text Completion Example
+
+Input Prompt:
+```text
+What are the top 5 emerging AI trends for 2023?
+```
+Response:
+```text
+1. Autonomous Vehicles: Autonomous vehicles are becoming increasingly popular and are expected to become a major part of the transportation landscape by 2023. Autonomous vehicles are expected to become commonplace in cities, allowing for faster and more efficient transportation.
+
+2. Smart Cities: Smart cities are cities that use technology to improve the lives of their citizens. This includes things like self-driving cars, smart energy grids, and automated waste management systems.
+
+3. AI-Powered Healthcare: AI-powered healthcare solutions are becoming more popular as they can help diagnose and treat illnesses more accurately and quickly. AI-powered healthcare solutions are expected to become more widespread in the next few years, allowing for more efficient and accurate healthcare.
+
+4. Natural Language Processing: Natural language processing (NLP) is the ability of a computer to understand human language. NLP is becoming more popular and is being used in applications such as voice assistants and customer service chatbots.
+
+5. Edge Computing: Edge computing is the use of computing resources that are located close to the user, such as on the user's device or in the cloud. Edge computing allows for faster and more efficient processing of data, which is becoming increasingly important as data becomes more complex.
+```
+
+
+### Image Generation Example
+
+Input Prompt:
+```text
+landscape painting with water and trees
+```
+Response:
+
+<img src="/output_chatgpt_images/images/img-hx959DWtE7QaZ8CWbSph0xo7.png" width=50% height=50%>
