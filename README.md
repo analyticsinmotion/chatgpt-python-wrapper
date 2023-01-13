@@ -20,7 +20,7 @@ For the ChatGPT text function a user will be requested to enter their text promp
     - dotenv (https://pypi.org/project/python-dotenv/)
     - re (to enable the use of regular expressions)
     - requests (to request images from the web)
-    - shutil
+    - shutil (to save images locally)
     - hashlib
 
 ### Installing
