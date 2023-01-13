@@ -40,7 +40,7 @@ For the ChatGPT image function a user will be requested to enter a description o
 
 Input Prompt:
 ```text
-What are the top 5 emerging AI trends for 2023?
+What are the top 5 emerging AI trends?
 ```
 Response:
 ```text
