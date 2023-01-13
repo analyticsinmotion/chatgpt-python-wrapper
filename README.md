@@ -1,9 +1,10 @@
 # ChatGPT – Python Wrapper
 Python wrapper to access OpenAI's ChatGPT functionality.
 <br /><br />
-[![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg?style=for-the-badge&logo=python&logoColor=yellow)](https://www.python.org/downloads/release/python-3111/)&nbsp;&nbsp;
+[![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/downloads/release/python-3111/)&nbsp;&nbsp;
 ![Maintenance](https://img.shields.io/badge/Maintained-YES-green.svg?style=for-the-badge)&nbsp;&nbsp;
 [![MIT license](https://img.shields.io/badge/License-MIT-orange.svg?style=for-the-badge)](https://mit-license.org/)&nbsp;&nbsp;
+[![PEP8](https://img.shields.io/badge/code%20style-PEP8-green.svg?style=for-the-badge)](https://www.python.org/dev/peps/pep-0008/)&nbsp;&nbsp;
 <br /><br />
 
 <!-- DESCRIPTION -->
@@ -69,3 +70,68 @@ landscape painting with water and trees
 Response:
 
 <img src="/output_chatgpt_images/images/img-hx959DWtE7QaZ8CWbSph0xo7.png" width=50% height=50%>
+<br /><br />
+
+<!-- OUTPUT FILES -->
+## Output Files
+
+### Text Completion Example
+
+JSON Response:
+```text
+{
+    "id": "cmpl-6WendmCVAliTTdQZCvh9MQBsrkin2",
+    "object": "text_completion",
+    "created": 1673241349,
+    "model": "text-davinci-003",
+    "choices": [
+        {
+            "text": "\n\nNo, Pluto is no longer considered a planet. It is now classified as a dwarf planet.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 5,
+        "completion_tokens": 21,
+        "total_tokens": 26
+    },
+    "parameters": [
+        {
+            "prompt": "Is Pluto a planet?",
+            "max_tokens": 2048,
+            "temperature": 0.5,
+            "top_p": 1,
+            "frequency_penalty": 0,
+            "presence_penalty": 0,
+            "n": 1
+        }
+    ]
+}
+```
+
+### Image Generation Example
+
+JSON Response:
+```text
+{
+    "created": 1673589687,
+    "data": [
+        {
+            "url": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-XXXXXXXXXXXXXXXXXXXXXXXX/user-XXXXXXXXXXXXXXXXXXXXXXXX/img-hx959DWtE7QaZ8CWbSph0xo7.png?st=2023-01-13T05%3A01%3A27Z&se=2023-01-13T07%3A01%3A27Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-01-13T00%3A13%3A40Z&ske=2023-01-14T00%3A13%3A40Z&sks=b&skv=2021-08-06&sig=nf9r9g20TYpxORNGKy3zT82atGsoAy/Q22sJrLTDKUE%3D"
+        }
+    ],
+    "_response_ms": 5705,
+    "parameters": [
+        {
+            "prompt": "landscape painting with water and trees",
+            "size": "1024x1024",
+            "n": 1
+        }
+    ],
+    "ids": [
+        "img-hx959DWtE7QaZ8CWbSph0xo7"
+    ]
+}
+```
