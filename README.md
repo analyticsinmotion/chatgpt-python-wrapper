@@ -38,6 +38,21 @@ For the ChatGPT image function a user will be requested to enter a description o
 - Run the main.py file
 <br /><br />
 
+<!-- DIRECTORY STRUCTURE -->
+## Directory Structure
+
+    .
+    ├── output_chatgpt_images           # Directory
+    │   ├── images                      # Directory
+    ├── output_chatgpt_text             # Directory
+    ├── chatgpt_images.py               # File
+    ├── chatgpt_text.py                 # File
+    ├── main.py                         # File
+    ├── openai_credentials.env          # File
+    ├── LICENSE.md                      # File
+    └── README.md                       # File
+<br />
+
 <!-- INSTRUCTIONS -->
 ## Instructions
 
