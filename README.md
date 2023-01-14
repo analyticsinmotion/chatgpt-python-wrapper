@@ -69,7 +69,7 @@ landscape painting with water and trees
 ```
 Response:
 
-<img src="/output_chatgpt_images/images/img-hx959DWtE7QaZ8CWbSph0xo7.png" width=50% height=50%>
+<img src="/output_chatgpt_images/images/img-hx959DWtE7QaZ8CWbSph0xo7.png" width=65% height=65%>
 <br /><br />
 
 <!-- OUTPUT FILES -->
