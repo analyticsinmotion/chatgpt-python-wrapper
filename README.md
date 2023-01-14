@@ -73,9 +73,14 @@ Response:
 <br /><br />
 
 <!-- OUTPUT FILES -->
-## Output Files
+## Output Files (Optional)
 
 ### Text Completion Example
+Set the <b>output_to_file</b> flag to True in the chatgpt_text function in order to generate the a JSON output file for each request.
+```text
+chatgpt_text(prompt, output_to_file=True)
+```
+<br />
 
 JSON Response:
 ```text
@@ -112,6 +117,11 @@ JSON Response:
 ```
 
 ### Image Generation Example
+Set the <b>output_to_file</b> flag to True in the chatgpt_images function in order to generate the a JSON output file for each request.
+```text
+chatgpt_images(prompt, output_to_file=True)
+```
+<br />
 
 JSON Response:
 ```text
