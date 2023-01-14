@@ -21,7 +21,7 @@ import shutil  # save images locally
 import hashlib  # create simple file ids
 
 # Load the API key for OpenAI
-load_dotenv('openai-credentials.env')
+load_dotenv('openai_credentials.env')
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
