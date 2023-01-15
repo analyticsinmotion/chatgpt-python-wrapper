@@ -14,6 +14,7 @@ import json
 # Import files that contain the python wrappers for text and images
 from chatgpt_text import chatgpt_text
 from chatgpt_images import chatgpt_images
+from chatgpt_moderation import chatgpt_moderation
 
 
 def menu():
@@ -42,14 +43,26 @@ def menu():
 
 def option1():
     input_prompt = input("Enter your text/question/scenario: ")
-    result = chatgpt_text(input_prompt, output_to_file=True)
-    result_dict = json.loads(str(result))
-    return print("Answer: " + result_dict['choices'][0]['text'].strip('\n'))
+    moderation_check = chatgpt_moderation(input_prompt, output_to_file=True)
+    if not moderation_check[0]:
+        result = chatgpt_text(input_prompt, output_to_file=True)
+        result_dict = json.loads(str(result))
+        return print("Answer: " + result_dict['choices'][0]['text'].strip('\n'))
+    else:
+        reasons = ', '.join([str(elem) for elem in moderation_check[1]])
+        print("Your input has been flagged as violating OpenAI's content policy for language that contains:",
+              reasons + ". Please try an alternative.")
 
 
 def option2():
     input_prompt = input("Enter a description of the image you would like created: ")
-    chatgpt_images(input_prompt, n=1, output_to_file=True)
+    moderation_check = chatgpt_moderation(input_prompt, output_to_file=True)
+    if not moderation_check[0]:
+        chatgpt_images(input_prompt, n=1, output_to_file=True)
+    else:
+        reasons = ', '.join([str(elem) for elem in moderation_check[1]])
+        print("Your input has been flagged as violating OpenAI's content policy for language that contains:",
+              reasons + ". Please try an alternative.")
 
 
 if __name__ == '__main__':
