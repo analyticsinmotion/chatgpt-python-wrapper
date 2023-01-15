@@ -60,7 +60,7 @@ def chatgpt_moderation(prompt, model="text-moderation-stable", output_to_file=Fa
         with open("output_chatgpt_moderation/" + response_raw['id'] + ".json", "w") as outfile:
             json.dump(response_dict, outfile, indent=4)
 
-    # Get the violation status - does the input breaches the openai T&Cs - True means a breach.
+    # Get the violation status - does the input breach the OpenAI T&Cs - True means a breach.
     flagged_status = response_raw['results'][0]['flagged']
     if flagged_status is True:
         reason_categories_dict = response_raw['results'][0]['categories']
