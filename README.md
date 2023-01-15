@@ -87,8 +87,8 @@ Response:
 <img src="/output_chatgpt_images/images/img-hx959DWtE7QaZ8CWbSph0xo7.png" width=65% height=65%>
 <br /><br />
 
-<!-- OUTPUT FILES -->
-## Output Files (Optional)
+<!-- JSON OUTPUT FILES -->
+## JSON Output Files (Optional)
 
 ### Text Completion Example
 Set the <b>output_to_file</b> flag to True in the chatgpt_text function in order to generate the a JSON output file for each request.
