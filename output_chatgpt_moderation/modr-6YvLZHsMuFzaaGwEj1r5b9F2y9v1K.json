@@ -1,0 +1,35 @@
+{
+    "id": "modr-6YvLZHsMuFzaaGwEj1r5b9F2y9v1K",
+    "model": "text-moderation-001",
+    "results": [
+        {
+            "categories": {
+                "hate": false,
+                "hate/threatening": false,
+                "self-harm": false,
+                "sexual": false,
+                "sexual/minors": false,
+                "violence": false,
+                "violence/graphic": false
+            },
+            "category_scores": {
+                "hate": 0.00021604621724691242,
+                "hate/threatening": 3.425440809223801e-05,
+                "self-harm": 0.00019086338579654694,
+                "sexual": 0.0009896220872178674,
+                "sexual/minors": 0.0002190630475524813,
+                "violence": 0.00039331699372269213,
+                "violence/graphic": 9.588436660123989e-05
+            },
+            "flagged": false
+        }
+    ],
+    "_response_ms": 137,
+    "parameters": [
+        {
+            "input": "What is the funniest thing you have been asked?",
+            "model": "text-moderation-stable"
+        }
+    ],
+    "created": 1673781614
+}
