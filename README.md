@@ -14,6 +14,8 @@ This project contains a number of test scripts that provide access to OpenAI's C
 For the ChatGPT text function a user will be requested to enter their text prompt, question or scenario. The resulting answer will be output on the screen. In addition, the output_to_file flag can be changed to output the text prompt, question, scenario, ChatGPT response and associated metadata in a JSON file.
 ### ChatGPT Image Generator
 For the ChatGPT image function a user will be requested to enter a description of the image they want created. The resulting image will be created and downloaded. In addition, the output_to_file flag can be changed to output the associated metadata in a JSON file.
+### ChatGPT Moderation
+All user input will be analyzed to ensure it complies with [OpenAI's Content Policy](https://labs.openai.com/policies/content-policy). Any input that is flagged for hate, threats, self-harm, sexual, or violent will not be passed to our text completion or image generator functions. The output_to_file flag can be changed to output the associated metadata in a JSON file for all input requests, regardless of whether they are flagged as in violation or not.
 <br /><br />
 
 <!-- GETTING STARTED -->
