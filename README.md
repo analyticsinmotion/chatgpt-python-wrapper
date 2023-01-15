@@ -38,6 +38,21 @@ For the ChatGPT image function a user will be requested to enter a description o
 - Run the main.py file
 <br /><br />
 
+<!-- DIRECTORY STRUCTURE -->
+## Directory Structure
+
+    .
+    ├── output_chatgpt_images           # Directory
+    │   ├── images                      # Directory
+    ├── output_chatgpt_text             # Directory
+    ├── chatgpt_images.py               # File
+    ├── chatgpt_text.py                 # File
+    ├── main.py                         # File
+    ├── openai_credentials.env          # File
+    ├── LICENSE.md                      # File
+    └── README.md                       # File
+<br />
+
 <!-- INSTRUCTIONS -->
 ## Instructions
 
@@ -69,13 +84,18 @@ landscape painting with water and trees
 ```
 Response:
 
-<img src="/output_chatgpt_images/images/img-hx959DWtE7QaZ8CWbSph0xo7.png" width=50% height=50%>
+<img src="/output_chatgpt_images/images/img-hx959DWtE7QaZ8CWbSph0xo7.png" width=65% height=65%>
 <br /><br />
 
-<!-- OUTPUT FILES -->
-## Output Files
+<!-- JSON OUTPUT FILES -->
+## JSON Output Files (Optional)
 
 ### Text Completion Example
+Set the <b>output_to_file</b> flag to True in the chatgpt_text function in order to generate the a JSON output file for each request.
+```text
+chatgpt_text(prompt, output_to_file=True)
+```
+<br />
 
 JSON Response:
 ```text
@@ -112,6 +132,11 @@ JSON Response:
 ```
 
 ### Image Generation Example
+Set the <b>output_to_file</b> flag to True in the chatgpt_images function in order to generate the a JSON output file for each request.
+```text
+chatgpt_images(prompt, output_to_file=True)
+```
+<br />
 
 JSON Response:
 ```text
@@ -133,5 +158,52 @@ JSON Response:
     "ids": [
         "img-hx959DWtE7QaZ8CWbSph0xo7"
     ]
+}
+```
+
+
+### Moderation Example
+Set the <b>output_to_file</b> flag to True in the chatgpt_moderation function in order to generate the a JSON output file for each request.
+```text
+chatgpt_moderation('I want to kill them.', output_to_file=True)
+```
+<br />
+
+JSON Response:
+```text
+{
+    "id": "modr-6Yu9h3Lz1mwNdfQLMmynkROTAynjF",
+    "model": "text-moderation-001",
+    "results": [
+        {
+            "categories": {
+                "hate": false,
+                "hate/threatening": true,
+                "self-harm": false,
+                "sexual": false,
+                "sexual/minors": false,
+                "violence": true,
+                "violence/graphic": false
+            },
+            "category_scores": {
+                "hate": 0.22702568769454956,
+                "hate/threatening": 0.4133393466472626,
+                "self-harm": 0.005232803523540497,
+                "sexual": 0.01407555304467678,
+                "sexual/minors": 0.0038546782452613115,
+                "violence": 0.922382652759552,
+                "violence/graphic": 0.036863770335912704
+            },
+            "flagged": true
+        }
+    ],
+    "_response_ms": 136,
+    "parameters": [
+        {
+            "input": "I want to kill them.",
+            "model": "text-moderation-stable"
+        }
+    ],
+    "created": 1673777034
 }
 ```
