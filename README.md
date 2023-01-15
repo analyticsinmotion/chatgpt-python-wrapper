@@ -160,3 +160,50 @@ JSON Response:
     ]
 }
 ```
+
+
+### Moderation Example
+Set the <b>output_to_file</b> flag to True in the chatgpt_moderation function in order to generate the a JSON output file for each request.
+```text
+chatgpt_moderation('I want to kill them.', output_to_file=True)
+```
+<br />
+
+JSON Response:
+```text
+{
+    "id": "modr-6Yu9h3Lz1mwNdfQLMmynkROTAynjF",
+    "model": "text-moderation-001",
+    "results": [
+        {
+            "categories": {
+                "hate": false,
+                "hate/threatening": true,
+                "self-harm": false,
+                "sexual": false,
+                "sexual/minors": false,
+                "violence": true,
+                "violence/graphic": false
+            },
+            "category_scores": {
+                "hate": 0.22702568769454956,
+                "hate/threatening": 0.4133393466472626,
+                "self-harm": 0.005232803523540497,
+                "sexual": 0.01407555304467678,
+                "sexual/minors": 0.0038546782452613115,
+                "violence": 0.922382652759552,
+                "violence/graphic": 0.036863770335912704
+            },
+            "flagged": true
+        }
+    ],
+    "_response_ms": 136,
+    "parameters": [
+        {
+            "input": "I want to kill them.",
+            "model": "text-moderation-stable"
+        }
+    ],
+    "created": 1673777034
+}
+```
