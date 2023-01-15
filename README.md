@@ -8,19 +8,19 @@ Python wrapper to access OpenAI's ChatGPT functionality.
 <br /><br />
 
 <!-- DESCRIPTION -->
-## Description
+## 1. Description
 This project contains a number of test scripts that provide access to OpenAI's ChatGPT models (text, image).
-### ChatGPT Text Completions
+### 1.1 ChatGPT Text Completions
 For the ChatGPT text function a user will be requested to enter their text prompt, question or scenario. The resulting answer will be output on the screen. In addition, the output_to_file flag can be changed to output the text prompt, question, scenario, ChatGPT response and associated metadata in a JSON file.
-### ChatGPT Image Generator
+### 1.2 ChatGPT Image Generator
 For the ChatGPT image function a user will be requested to enter a description of the image they want created. The resulting image will be created and downloaded. In addition, the output_to_file flag can be changed to output the associated metadata in a JSON file.
-### ChatGPT Moderation
+### 1.3 ChatGPT Moderation
 All user input will be analyzed to ensure it complies with [OpenAI's Content Policy](https://labs.openai.com/policies/content-policy). Any input that is flagged for hate, threats, self-harm, sexual, or violent will not be passed to our text completion or image generator functions. The output_to_file flag can be changed to output the associated metadata in a JSON file for all input requests, regardless of whether they are flagged as in violation or not.
 <br /><br />
 
 <!-- GETTING STARTED -->
-## Getting Started
-### Dependencies
+## 2. Getting Started
+### 2.1 Dependencies
 - Requires an OpenAI API Key
 - Requires the following Modules:
     - os (makes interaction with the local file system simpler)
@@ -32,16 +32,16 @@ All user input will be analyzed to ensure it complies with [OpenAI's Content Pol
     - shutil (to save images locally)
     - hashlib (create simple file IDs for images)
 
-### Installing
+### 2.2 Installing
 - Create an account and get API Key at https://chat.openai.com
 - Add the API Key to the openai-credentials.env file
 
-### Executing Program
+### 2.3 Executing Program
 - Run the main.py file
 <br /><br />
 
 <!-- DIRECTORY STRUCTURE -->
-## Directory Structure
+## 3. Directory Structure
 
     .
     ├── output_chatgpt_images           # Directory
@@ -58,9 +58,9 @@ All user input will be analyzed to ensure it complies with [OpenAI's Content Pol
 <br />
 
 <!-- INSTRUCTIONS -->
-## Instructions
+## 4. Instructions
 
-### Text Completion Example
+### 4.1 Text Completion Example
 
 Input Prompt:
 ```text
@@ -80,7 +80,7 @@ Response:
 ```
 
 
-### Image Generation Example
+### 4.2 Image Generation Example
 
 Input Prompt:
 ```text
@@ -89,12 +89,25 @@ landscape painting with water and trees
 Response:
 
 <img src="/output_chatgpt_images/images/img-hx959DWtE7QaZ8CWbSph0xo7.png" width=65% height=65%>
+<br />
+
+
+### 4.3 Moderation Example
+
+Input Prompt:
+```text
+I want to kill them.
+```
+Response:
+```text
+(True, ['hate/threatening', 'violence'])
+```
 <br /><br />
 
 <!-- JSON OUTPUT FILES -->
-## JSON Output Files (Optional)
+## 5. JSON Output Files (Optional)
 
-### Text Completion Example
+### 5.1 Text Completion Example
 Set the <b>output_to_file</b> flag to True in the chatgpt_text function in order to generate the a JSON output file for each request.
 ```text
 chatgpt_text(prompt, output_to_file=True)
@@ -135,7 +148,7 @@ JSON Response:
 }
 ```
 
-### Image Generation Example
+### 5.2 Image Generation Example
 Set the <b>output_to_file</b> flag to True in the chatgpt_images function in order to generate the a JSON output file for each request.
 ```text
 chatgpt_images(prompt, output_to_file=True)
@@ -166,7 +179,7 @@ JSON Response:
 ```
 
 
-### Moderation Example
+### 5.3 Moderation Example
 Set the <b>output_to_file</b> flag to True in the chatgpt_moderation function in order to generate the a JSON output file for each request.
 ```text
 chatgpt_moderation('I want to kill them.', output_to_file=True)
