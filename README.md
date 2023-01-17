@@ -44,7 +44,7 @@ All user input will be analyzed to ensure it complies with [OpenAI's Content Pol
 <!-- DIRECTORY STRUCTURE -->
 ## 3. Directory Structure
 
-    .
+    ChatGPT
     ├── output_chatgpt_images           # Directory
     │   ├── images                      # Directory
     ├── output_chatgpt_moderation       # Directory    
