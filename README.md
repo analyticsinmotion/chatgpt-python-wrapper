@@ -77,7 +77,7 @@ Response:
 
 4. Natural Language Processing: Natural language processing (NLP) is the ability of a computer to understand human language. NLP is becoming more popular and is being used in applications such as voice assistants and customer service chatbots.
 
-5. Edge Computing: Edge computing is the use of computing resources that are located close to the user, such as on the user's device or in the cloud. Edge computing allows for faster and more efficient processing of data, which is becoming increasingly important as data becomes more complex.
+5. Edge Computing: Edge computing is the use of computing resources that are located close to the user, such as on the user's device or in the cloud. Edge computing allows for faster and more efficient processing of data, which is becoming increasingly important as data becomes more complex. 
 ```
 
 
