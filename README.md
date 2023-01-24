@@ -1,7 +1,7 @@
 # ChatGPT – Python Wrapper
 Python wrapper to access OpenAI's ChatGPT functionality.
 <br /><br />
-<!-- badges: start -->
+
 [![Analytics in Motion](https://www.analyticsinmotion.com/assets/images/analytics-in-motion-github-badge.svg)](https://www.analyticsinmotion.com)&nbsp;&nbsp;
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/downloads/release/python-3111/)&nbsp;&nbsp;
 ![Maintenance](https://img.shields.io/badge/Maintained-YES-green.svg?style=for-the-badge)&nbsp;&nbsp;
@@ -9,7 +9,6 @@ Python wrapper to access OpenAI's ChatGPT functionality.
 [![PEP8](https://img.shields.io/badge/code%20style-PEP8-green.svg?style=for-the-badge)](https://www.python.org/dev/peps/pep-0008/)&nbsp;&nbsp;
 <!-- [![CodeQL](https://github.com/analyticsinmotion/chatgpt-python-wrapper/actions/workflows/codeql.yml/badge.svg?style=for-the-badge)](https://github.com/analyticsinmotion/chatgpt-python-wrapper/actions) -->
 [![action](https://img.shields.io/badge/CodeQL-passing-green.svg?style=for-the-badge&logo=github&logoColor=959da4)](https://github.com/analyticsinmotion/chatgpt-python-wrapper/actions)
-<!-- badges: end -->
 <br /><br />
 
 <!-- DESCRIPTION -->
