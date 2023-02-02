@@ -27,14 +27,14 @@ All user input will be analyzed to ensure it complies with [OpenAI's Content Pol
 ### 2.1 Dependencies
 - Requires an OpenAI API Key
 - Requires the following Modules:
-    - os (makes interaction with the local file system simpler)
-    - json (in-built package to create, store, convert json objects)
-    - openai (https://github.com/openai/openai-python)
-    - dotenv (https://pypi.org/project/python-dotenv/)
-    - re (to enable the use of regular expressions)
-    - requests (to request images from the web)
-    - shutil (to save images locally)
-    - hashlib (create simple file IDs for images)
+  - os (makes interaction with the local file system simpler)
+  - json (in-built package to create, store, convert json objects)
+  - openai (<a href="https://github.com/openai/openai-python">https://github.com/openai/openai-python</a>)
+  - dotenv (<a href="https://pypi.org/project/python-dotenv/">https://pypi.org/project/python-dotenv/</a>)
+  - re (to enable the use of regular expressions)
+  - requests (to request images from the web)
+  - shutil (to save images locally)
+  - hashlib (create simple file IDs for images)
 
 ### 2.2 Installing
 - Create an account and get API Key at <a href="https://chat.openai.com">https://chat.openai.com</a>
