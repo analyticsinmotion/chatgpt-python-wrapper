@@ -37,7 +37,7 @@ All user input will be analyzed to ensure it complies with [OpenAI's Content Pol
     - hashlib (create simple file IDs for images)
 
 ### 2.2 Installing
-- Create an account and get API Key at https://chat.openai.com
+- Create an account and get API Key at <a href="https://chat.openai.com">https://chat.openai.com</a>
 - Add the API Key to the openai-credentials.env file
 
 ### 2.3 Executing Program
