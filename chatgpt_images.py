@@ -1,7 +1,7 @@
 """
 This is a test script that provides access to OpenAI's ChatGPT model.
 It creates a function chatgpt_images that allows a user to describe what image ChatGPT should create.
-The image will be output in the output_chatgpt_images/images folder
+The image will be output in the output_chatgpt_images/images folder.
 A response can also be output as a JSON file that contains additional metadata.
 
 Functions:
