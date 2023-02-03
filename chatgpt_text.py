@@ -1,14 +1,13 @@
-#######################################################################################################################
-# Filename: chatgpt_text.py
-# Creation Date: 4/01/2023
-# Tested on: Python 3.11
-# PEP8 Exceptions: None
-# Docstring format: Sphinx
-# Description:  This is a test script that provides access to OpenAI's chatGPT model. It creates a function chatgpt_text
-#               that allows a users to enter a text prompt, question or scenario and also adjust the model settings.
-#               The answer will be output on the screen. A response can also output as a JSON file that contains
-#               additional metadata.
-#######################################################################################################################
+"""
+This is a test script that provides access to OpenAI's ChatGPT model.
+It creates a function chatgpt_text that allows a user to enter a text prompt (question or scenario) to ask ChatGPT.
+This function also allows a user to adjust the ChatGPT model configurations.
+ChatGPTs response will be output in the UI. A response can also output as a JSON file that contains additional metadata.
+
+Functions:
+    chatgpt_text(prompt, model, max_tokens, temperature top_p, frequency_penalty, presence_penalty, n, output_to_file)
+    -> object
+"""
 
 # Import os, dotenv, openai, json
 import os
