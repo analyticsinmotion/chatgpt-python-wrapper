@@ -7,17 +7,6 @@ A response can also be output as a JSON file that contains additional metadata.
 Functions:
     chatgpt_images(prompt, n, size, output_to_file) -> object
 """
-#######################################################################################################################
-# Filename: chatgpt_images.py
-# Creation Date: 4/01/2023
-# Tested on: Python 3.11
-# PEP8 Exceptions: None
-# Docstring format: Sphinx
-# Description:  This is a test script that provides access to OpenAI's chatGPT model. It creates a function
-#               chatgpt_images that allows a users to enter what image it wants chatgpt to create. The image will be
-#               output in the output_chatgpt_images/images folder. A response can also output as a JSON file
-#               that contains additional metadata.
-#######################################################################################################################
 
 # Import os, dotenv, openai, json, re, requests, shutil, hashlib
 import os
