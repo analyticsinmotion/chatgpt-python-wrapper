@@ -1,15 +1,13 @@
-#######################################################################################################################
-# Filename: chatgpt_moderation.py
-# Creation Date: 4/01/2023
-# Tested on: Python 3.11
-# PEP8 Exceptions: None
-# Docstring format: Sphinx
-# Description:  This is a test script that provides access to OpenAI's chatGPT model. It creates a function
-#               chatgpt_moderation to check whether any user input violates OpenAI's content policy. Where a
-#               violation is identified the user input should not be processed for the text completion or image
-#               generation functions. The reason for the violation will be output on the screen. A full response can
-#               also output as a JSON file that contains additional metadata.
-#######################################################################################################################
+"""
+This is a test script that provides access to OpenAI's ChatGPT model.
+It creates a function chatgpt_moderation to check whether any user input violates OpenAI's content policy. Where a
+violation is identified, the user input should not be processed for the text completion or image generation functions.
+The reason for the violation will be output on the screen.
+A full response can also output as a JSON file that contains additional metadata.
+
+Functions:
+    chatgpt_moderation(prompt, model, output_to_file) -> tuple
+"""
 
 # Import os, dotenv, openai, json, datetime
 import os
@@ -26,6 +24,14 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Create a function to input text and set the moderation model
 def chatgpt_moderation(prompt, model="text-moderation-stable", output_to_file=False):
+    """
+    This function checks whether any user input violates OpenAI's content policy
+
+    :param prompt: the input to be checked
+    :param model: the content moderation model being used
+    :param output_to_file: output a JSON file with the results
+    :return: (bool, list)
+    """
     response_raw = openai.Moderation.create(input=prompt, model=model)
 
     # Convert the Completion response from an OpenAIObject to a dictionary type so can convert to JSON later
