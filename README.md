@@ -228,3 +228,12 @@ JSON Response:
     "created": 1673777034
 }
 ```
+
+<!-- Best Practices for API Key Safety -->
+## 6. Best Practices for API Key Safety
+
+Your OpenAI APIKEY key/s should be kept secure and private at all times.
+
+Please follow the best practices guide for API security from OpenAI 
+<br />
+<a href="https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety">https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety</a>
