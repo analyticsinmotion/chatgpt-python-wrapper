@@ -35,6 +35,8 @@ All user input will be analyzed to ensure it complies with [OpenAI's Content Pol
   - requests (to request images from the web)
   - shutil (to save images locally)
   - hashlib (create simple file IDs for images)
+  
+Please be aware of the [costs](https://openai.com/pricing) associated with using the OpenAI API when utilizing this project.
 
 ### 2.2 Installing
 - Create an account and get API Key at <a href="https://chat.openai.com">https://chat.openai.com</a>
