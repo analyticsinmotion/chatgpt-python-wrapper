@@ -1,22 +1,16 @@
 # ChatGPT – Python Wrapper
 Python wrapper to access OpenAI's ChatGPT functionality.
 <br /><br />
-<!--
-[![Analytics in Motion](https://raw.githubusercontent.com/analyticsinmotion/.github/main/assets/images/analytics-in-motion-github-badge-rectangle.svg)](https://www.analyticsinmotion.com)&nbsp;&nbsp;
-[![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/downloads/release/python-3111/)&nbsp;&nbsp;
-![Maintenance](https://img.shields.io/badge/Maintained-YES-green.svg?style=for-the-badge)&nbsp;&nbsp;
-[![MIT license](https://img.shields.io/badge/License-MIT-orange.svg?style=for-the-badge)](https://mit-license.org/)&nbsp;&nbsp;
-[![PEP8](https://img.shields.io/badge/code%20style-PEP8-green.svg?style=for-the-badge)](https://www.python.org/dev/peps/pep-0008/)&nbsp;&nbsp;
-[![action](https://img.shields.io/badge/CodeQL-passing-green.svg?style=for-the-badge&logo=github&logoColor=959da4)](https://github.com/analyticsinmotion/chatgpt-python-wrapper/actions)
-<br /><br />
--->
 
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg?style=badge&logo=python&logoColor=ffdd54)](https://www.python.org/downloads/release/python-3111/)&nbsp;&nbsp;
+[![ChatGPT](https://img.shields.io/badge/ChatGPT-74aa9c?style=badge&logo=openai&logoColor=white)](https://chat.openai.com)&nbsp;&nbsp;
 [![PEP8](https://img.shields.io/badge/code%20style-PEP8-green.svg?style=badge)](https://www.python.org/dev/peps/pep-0008/)&nbsp;&nbsp;
 [![MIT license](https://img.shields.io/badge/License-MIT-orange.svg?style=badge)](https://mit-license.org/)&nbsp;&nbsp;
 [![action](https://img.shields.io/badge/CodeQL-passing-green.svg?style=badge&logo=github&logoColor=959da4)](https://github.com/analyticsinmotion/chatgpt-python-wrapper/actions)&nbsp;&nbsp;
+[![OpenAI](https://img.shields.io/badge/OpenAI-000000?style=badge&logo=openai&logoColor=white)](https://openai.com)&nbsp;&nbsp;
 [![Analytics in Motion](https://raw.githubusercontent.com/analyticsinmotion/.github/main/assets/images/analytics-in-motion-github-badge-rounded.svg)](https://www.analyticsinmotion.com)&nbsp;&nbsp;
-<br /><br />
+
+<br />
 
 <!-- DESCRIPTION -->
 ## 1. Description
